@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/0454434f54.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <style>
+      .head {
+        display: flex;
+        justify-content: space-evenly;
+        position:sticky;
+        top:1px;
+        background-color: white;
+        z-index: 2;
+      }
+      .para {
+        font-size: 30px;
+      }
+      .main {
+        background-color: bisque;
+        height: 130vh;
+        display: grid;
+        gap: 50px;
+        grid-template-columns: 200px 200px 200px 200px;
+        grid-template-rows: repeat(4, 250px);
+        justify-content: center;
+        row-gap: 250px;
+        column-gap: 100px;
+      }
+      .main div {
+        background-color: aqua;
+        border: 1px solid;
+        margin: 20px;
+      }
+      #menu {
+        position: relative;
+        left: -200px;
+        top: 40px;
+      }
+      #menu:hover {
+        background-color: bisque;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        
+      }
+      .para1 {
+        position: relative;
+        left: 100px;
+      }
+      img {
+        height: 300px;
+        width: 250px;
+      }
+      .con1 {
+        font-size: 20px;
+      }
+      .con2 {
+        font-size: 13px;
+      }
+      .book {
+        position: relative;
+        top: 150px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+      #vue {
+        position: relative;
+        top: 1px;
+        transform: rotate(90deg);
+      }
+      #vue1 {
+        position: relative;
+        top: 1px;
+        transform: rotate(270deg);
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      a:hover {
+        background-color: black;
+        width: 30px;
+        color: white;
+      }
+      .about {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 200px;
+        font-size: 30px;
+      }
+      #chef {
+        position: relative;
+        top: 250px;
+        height: 500px;
+        width: 700px;
+        left: 400px;
+        z-index: -1;
+      }
+      .iam{
+        position:relative;
+        top:250px;
+      }
+      .iam1{
+        position: relative;
+        left:700px;
+      }
+      .iam2{
+        position: relative;
+        left:650px;
+        font-size: 15px;
+      }
+      .iam3{
+        position: relative;
+        left:250px;
+        font-size: 15px;
+      }
+      .footer{
+       position:relative;
+       top:300px;
+       display: grid;
+       grid-template-columns: auto auto auto;
+      }
+      #f1{
+        width:50px;
+        height:50px;
+      }
+      .fp1{
+        position:relative;
+        left:70px;
+        top:-70px;
+      }
+      .fp2{
+        position:relative;
+        left:70px;
+        top:-110px;
+      }
+      #f2{
+        position: relative;
+        top:-40px;
+        width:50px;
+        height:50px;
+      }
+      .fp1:hover{
+        background-color: cadetblue;
+        width:150px;
+        /* height:20px; */
+      }
+      .fp2:hover{
+        background-color: cadetblue;
+        width:150px;
+      }
+      #but{
+        background-color: black;
+        color: white;
+      }
+      @media screen and (min-width : 250px) and (max-width:750px){
+        .main {
+        background-color: bisque;
+         height: 450vh; 
+         width:130vw;
+        display: grid;
+        gap: 50px;
+        grid-template-columns: 200px;
+        grid-template-rows: repeat(4, 250px);
+        justify-content: center;
+        row-gap: 250px;
+
+      }
+      .head {
+        display: flex;
+        justify-content: space-evenly;
+        position:sticky;
+        top:1px;
+        width:600px;
+        background-color: white;
+        z-index: 2;
+      }
+      .main div {
+        background-color: aqua;
+        border: 1px solid;
+        margin: 20px;
+        height:80px;
+      }
+      .head {
+        display: flex;
+        justify-content: space-evenly;
+        position:sticky;
+        top:1px;
+        background-color: white;
+        z-index: 2;
+      }
+      a:hover {
+        background-color: black;
+        width: 30px;
+        color: white;
+      }
+      #menu {
+        position: relative;
+        left: -10px;
+        top: 40px;
+      }
+      .fp1:hover{
+        background-color: cadetblue;
+        width:150px;
+        /* height:20px; */
+      }
+      .fp2:hover{
+        background-color: cadetblue;
+        width:150px;
+      }
+      .book {
+        position: relative;
+        top: 100px;
+        left:100px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+      #vue {
+        position: relative;
+        top: 1px;
+        transform: rotate(90deg);
+      }
+      #vue1 {
+        position: relative;
+        top: 1px;
+        transform: rotate(270deg);
+      }
+      .iam{
+        position:relative;
+        top:200px;
+      }
+      .iam1{
+        position: relative;
+        left:200px;
+      }
+      .iam2{
+        position: relative;
+        left:150px;
+        font-size: 15px;
+      }
+      .iam3{
+        position: relative;
+        left:100px;
+        font-size: 15px;
+      }
+      .footer{
+       position:relative;
+       top:200px;
+       display: grid;
+       grid-template-columns: auto;
+    }
+    .about {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 150px;
+        font-size: 30px;
+        left:100px;
+      }
+      #chef {
+        position: relative;
+        top: 200px;
+        height: 400px;
+        width: 300px;
+        left: 150px;
+        z-index: -1;
+      }
+      .di1{
+        position: relative;
+        top:-80px;
+      }
+      .di2{
+        position: relative;
+        top:-150px;
+      }
+        .di3{
+        position: relative;
+        top:-170px;
+      }
+      .f3{
+        position:relative;
+        left:10px;
+        top:-100px;
+      }
+    }
+        
+    </style>
+  </head>
+  <body>
+    <div class="head">
+      <i id="menu" class="fa-solid fa-bars fa-xl"></i>
+      <p class="para">My Food</p>
+      <p class="para para1">Mail</p>
+    </div>
+    <div class="main" id="book1">
+      <div class="child1">
+        <img src="./grid images/dish1.jpg" />
+        <pre class="con1">The Perfect Sandwich, A <br> Real NYC Classic</pre>
+        <pre
+          class="con2"
+        >Just some random text, lorem ipsum text <br> praesent tincidunt ipsum lipsum.</pre>
+      </div>
+      <div class="child2">
+        <img src="./grid images/dish2.jpg" />
+        <pre class="con1">Let Me Tell You About<br>    This Steak</pre>
+        <pre
+          class="con2"
+        >Once again, some random text to lorem <br>lorem lorem lorem ipsum text praesent<br> tincidunt ipsum lipsum.</pre>
+      </div>
+      <div class="child3">
+        <img src="./grid images/dish3.jpg" />
+        <pre class="con1">Cherries, interrupted</pre>
+        <pre class="con2">Lorem ipsum text praesent tincidunt <br> ipsum lipsum.
+
+        What else?</pre>
+      </div>
+      <div class="child4">
+        <img src="./grid images/dish4.jpg" />
+        <pre class="con1">Once Again, Robust Wine <br>and Vegetable Pasta</pre>
+        <pre
+          class="con2"
+        >Lorem ipsum text praesent tincidunt<br> ipsum lipsum.</pre>
+      </div>
+      <div class="child5">
+        <img src="./grid images/dish5.jpg" />
+        <pre class="con1">All I Need Is a Popsicle</pre>
+        <pre
+          class="con2"
+        >Lorem ipsum text praesent tincidunt<br> ipsum lipsum.</pre>
+      </div>
+      <div class="child6 di1">
+        <img src="./grid images/dish6.jpg" />
+        <pre class="con1">Salmon For Your Skin</pre>
+        <pre
+          class="con2"
+        >Once again, some random text to lorem<br> lorem lorem lorem ipsum text praesent<br> tincidunt ipsum lipsum.</pre>
+      </div>
+      <div class="child7 di2">
+        <img src="./grid images/dish7.jpg" />
+        <pre class="con1">The Perfect Sandwich, A <br>  Real Classic</pre>
+        <pre
+          class="con2"
+        >Just some random text, lorem ipsum text <br>praesent tincidunt ipsum lipsum.</pre>
+      </div>
+      <div class="child8 di3">
+        <img src="./grid images/dish8.jpg" />
+        <pre class="con1">       Le French</pre>
+        <pre
+          class="con2"
+        >Lorem lorem lorem lorem ipsum text <br>praesent tincidunt ipsum lipsum.</pre>
+      </div>
+    </div>
+    <div class="book">
+      <div id="cs1">
+        <a href="#book1"
+          ><ion-icon id="vue" style="font-size: 10px" name="logo-vue"></ion-icon
+        ></a>
+      </div>
+      <div id="cs2"><a href="#book1">1</a></div>
+      <div id="cs3"><a href="#book1">2</a></div>
+      <div id="cs4"><a href="#book1">3</a></div>
+      <div id="cs5"><a href="#book1">4</a></div>
+      <div id="cs6">
+        <a href="#book1"
+          ><ion-icon
+            id="vue1"
+            style="font-size: 10px"
+            name="logo-vue"
+          ></ion-icon
+        ></a>
+      </div>
+    </div>
+    <div class="about">About Me, The Food Man</div>
+    <div><img id="chef" src="./grid images/chef.jpg" /></div>
+    <div class="iam">
+      <p class="iam1" style="font-size: 20px;">I am Who I Am!</p>
+      <p class="iam2">With Passion For Real, Good Food</p>
+      <p class="iam3">
+        Just me, myself and I, exploring the universe of unknownment. I have a
+        heart of love and an interest of lorem ipsum and mauris neque quam blog.
+        I want to share my world<br> with you. Praesent tincidunt sed tellus ut
+        rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
+        congue gravida diam non fringilla. Praesent tincidunt sed<br> tellus ut
+        rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
+        congue gravida diam non fringilla.
+      </p>
+    </div>
+    <div class="footer">
+        <div class="f1">
+            <h2>FOOTER</h2>
+            <p class="pa2">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo<br> condimentum, porta lectus vitae, ultricies congue <r></r>gravida diam non fringilla.
+                <br>Powered by w3.css</p>
+        </div>
+        <div class="f2" width="100px">
+            <h2>BLOG POSTS</h2>
+            <img  id="f1" src="./grid images/f1.jpg"/>
+            <p class="fp1"><span style="font-size: 20px;">Lorem</span><br>
+                Sed mattis nunc</p>
+                <div class="im2">
+                <img  id="f2" src="./grid images/f2.jpg"/>
+            <p class="fp2"><span style="font-size: 20px;">Ipsum</span><br>
+                Praes tinci sed</p></div>
+        </div>
+        <div class="f3">
+            <h2>popular tags</h2>
+            <form>
+                <button id="but">Travel</button>
+                <button>New york</button>
+                <button>Dinner</button>
+                <button>Salmon</button>
+                <button>France</button>
+                <button>Drinks</button><br><br>
+                <button>Ideas</button>
+                <button>Flavours</button>
+                <button>Cuisine</button>
+                <button>Chicken</button>
+                <button>Dressing</button>
+                <button>Fried</button>
+                <button>Fish</button><br><br>
+                <button>Duck</button>
+            </form>
+        </div>
+    </div>
+  </body>
+</html>
